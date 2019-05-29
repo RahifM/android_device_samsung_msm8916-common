@@ -20,7 +20,7 @@ $(call inherit-product-if-exists, device/samsung/qcom-common/qcom-common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Include proprietary blobs
-$(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a5-common/a5-common-vendor.mk)
 
 LOCAL_PATH := device/samsung/msm8916-common
 
@@ -57,7 +57,7 @@ PRODUCT_PACKAGES += \
     libtinycompress
 
 # Audio configuration file
-AUDIO_CONFIG_PATH := hardware/qcom/audio-caf/msm8916/configs
+AUDIO_CONFIG_PATH := hardware/qcom/audio-caf-msm8916/configs
 PRODUCT_COPY_FILES += \
     $(AUDIO_CONFIG_PATH)/msm8916_32/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
     $(AUDIO_CONFIG_PATH)/msm8916_32/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
